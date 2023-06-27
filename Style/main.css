@@ -80,3 +80,63 @@
 .slide.active{
     opacity: 1;
 }
+/*solution start-->*/
+.solution-main-outer {
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+}
+
+.inner-wrap{
+    width: 100%;
+    height: 250px;
+    border: 1px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 100%;
+    position: relative;
+    background-color: rgba(241, 242, 246,1.0);
+
+}
+.inner-wrap-element{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+}
+.inner:hover{
+    background-color: rgba(45, 52, 54,0.6);
+    cursor: pointer;
+    color: white;
+}
+.inner .inner-wrap-element:first-child{
+    justify-content: flex-end;
+}
+.inner-wrap-element >i{
+    font-size: 50px;
+}
+.movable-element{
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+    background-color: rgba(0, 206, 201,1.0);
+    right: 120px;
+    transition: all 1s;
+}
+.inner:hover .movable-element{
+    transform: translateX(50px);
+    display: flex;
+}
+/*solution end-->*/
