@@ -3,8 +3,10 @@ $(document).ready(function (){
     let pointer = 0;
 
     function viewSlide(){
-        slidesData.removeClass("active");
-        slidesData.eq(pointer).addClass('active');
+        /*slidesData.removeClass("active");
+        slidesData.eq(pointer).addClass('active');*/
+        slidesData.fadeOut(4000);
+        slidesData.eq(pointer).fadeIn(4000);
     }
     function next(){
         pointer++;
@@ -13,5 +15,5 @@ $(document).ready(function (){
         }
         viewSlide();
     }
-    setInterval(next,3000);
+    setInterval(next,4000);
 })

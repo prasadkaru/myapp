@@ -6,7 +6,7 @@
     width: 100%;
     height: 40px;
 
-    background-color: rgba(99, 110, 114,0.9);
+    background-color: rgba(99, 110, 114,0.7);
 }
 .top-inner{
 
@@ -59,22 +59,22 @@
 .nav-outer{
     width: 100%;
     height: 70px;
-    background-color: rgba(45, 52, 54,1.0);
+    background-color: rgba(45, 52, 54,0.8);
 }
 .slider{
     width: 100%;
-    height: 100vh;
-    border: 1px solid red;
+    height: 80vh;
     overflow: hidden;
     position: relative;
-    top:0;
+    top:-110px;
+    z-index: -1;
 }
 .slide{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-    opacity: 0;
+    display: none;
     left: 0;
 }
 .slide.active{
