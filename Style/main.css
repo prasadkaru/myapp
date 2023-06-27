@@ -85,6 +85,7 @@
     width: 100%;
     height: auto;
     border: 1px solid red;
+    background-color: rgba(34, 47, 62,1.0);
 }
 
 .inner-wrap{
@@ -140,3 +141,8 @@
     display: flex;
 }
 /*solution end-->*/
+@media (max-width: 1000px) {
+    .top-outer{
+        display: none;
+    }
+}
