@@ -5,11 +5,11 @@
 .top-outer{
     width: 100%;
     height: 40px;
-    border: 1px solid red;
+
     background-color: rgba(99, 110, 114,0.9);
 }
 .top-inner{
-    border: 1px solid red;
+
     display: flex;
     height: 100%;
 }
@@ -29,12 +29,26 @@
 .top-left>ul>li{
     color: white;
     font-size: 14px;
-    border: 1px solid red;
+
 }
-.top-right{
+.top-right ul{
     list-style: none;
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
 }
 
-.top-right ul li{
-    
+.top-right ul li {
+    color: white;
+    margin-right: 14PX;
+    display: flex;
+    align-items: center;
+}
+.top-right ul li:last-child{
+   margin-right: 0;
+                 }
+
+.top-right ul li:hover{
+    color: #0984e3;
+    cursor: pointer;
 }
