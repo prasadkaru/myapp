@@ -84,14 +84,12 @@
 .solution-main-outer {
     width: 100%;
     height: auto;
-    border: 1px solid red;
     background-color: rgba(34, 47, 62,1.0);
 }
 
 .inner-wrap{
     width: 100%;
     height: 250px;
-    border: 1px solid red;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -99,7 +97,6 @@
 .inner{
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     height: 100%;
     position: relative;
     background-color: rgba(241, 242, 246,1.0);
@@ -140,9 +137,39 @@
     transform: translateX(50px);
     display: flex;
 }
+.bg-outer{
+    width: 100%;
+    height: 50px;
+    background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.team-item-outer{
+    width: 260px;
+    height: 350px;
+    border: 1px solid red ;
+    background-image: url("https://www.galileo.edu/trends-innovation/wp-content/uploads/2019/10/young-man-looking-to-camera-in-front-of-a-P5NG2HC.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.element{
+    width: 100%;
+    height: 175px;
+    background-color: rgba(9, 132, 227,0.5);
+    position: absolute;
+}
+.top-element{
+top: -175px;
+}
+.bottom-element {
+bottom: -175px;
+}
 /*solution end-->*/
 @media (max-width: 1000px) {
     .top-outer{
         display: none;
     }
-}
+    }
